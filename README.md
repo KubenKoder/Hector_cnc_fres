@@ -13,3 +13,31 @@ In 2018 it got an upgrade with [JMC iHSS60 nema24 integrated closed loop stepper
 
 #### 2020
 HECTOR is currently being fitted for use by the pupils at Kuben upper secondary vocational school in Oslo, Norway. [Kuben school page in Norweigian](https://kuben.vgs.no/) 
+
+#### 2021
+
+##### 08.03
+Vi testet motoren. Vi har ikke helt fått den til å funke som ønsket.
+Det vi mangler er å finne startsekvensen som kan aktivere motoren. Vi fikk den til å kjøre en gang, men vet ikke helt hva vi gjorde for at det skulle skje. 
+
+Kode som funket en gang:
+'''C++
+#include <Servo.h>
+Servo ESC;     // create servo object to control the ESC
+
+int potValue;  // value from the analog pin
+
+void setup() {
+  // Attach the ESC on pin 9
+  ESC.attach(9,1000,2000); // (pin, min pulse width, max pulse width in microseconds) 
+
+  potValue = analogRead(A0);   // reads the value of the potentiometer (value between 0 and 1023)
+  potValue = map(potValue, 0, 1023, 0, 180);   // scale it to use it with the servo library (value between 0 and 180)
+  ESC.write(potValue);    // Send the signal to the ESC
+}
+
+void loop() {
+  potValue = 90;
+  ESC.write(potValue);    
+}
+'''
