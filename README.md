@@ -18,7 +18,7 @@ HECTOR is currently being fitted for use by the pupils at Kuben upper secondary 
 
 ##### 08.03
 Vi testet motoren. Vi har ikke helt fått den til å funke som ønsket.
-Det vi mangler er å finne startsekvensen som kan aktivere motoren. Vi fikk den til å kjøre en gang, men vet ikke helt hva vi gjorde for at det skulle skje. følgen [denne] (https://howtomechatronics.com/tutorials/arduino/arduino-brushless-motor-control-tutorial-esc-bldc/) fremgangsmåten for børsteløs motor kontroller kan man bruke Arduino sitt innebygde bibliotek for servoer.
+Det vi mangler er å finne startsekvensen som kan aktivere motoren. Vi fikk den til å kjøre en gang, men vet ikke helt hva vi gjorde for at det skulle skje. Ifølgen [denne](https://howtomechatronics.com/tutorials/arduino/arduino-brushless-motor-control-tutorial-esc-bldc/) fremgangsmåten for børsteløs motor kontroller kan man bruke Arduino sitt innebygde bibliotek for servoer.
 
 Kode som funket en gang:
 ```C++
