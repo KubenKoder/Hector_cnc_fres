@@ -66,3 +66,49 @@ void loop() {
   ESC.write(potValue);    // Send the signal to the ESC
 }
 ```
+
+##### 10.03
+Motoren trekker opp mot 90A, og trenger nøyaktig 22.2V. Hvis ikke vil den gi en "feil-volts-melding" der den rykker litt fram og tilbake og piper. Det er satt inn en ny PSU, men vi trenger en enda større, fordi den vi har er bare laget for å gi 40A. Den går da i "boost-mode" for å kompansere.
+
+Alle ledninger er blitt dratt ut, så vi kan begynne å komprimere hele anlegget. Det vi trenger å få på plass er en boks for kretskortet og for Arduinoen som skal styre motoren. 
+
+
+Koden for motoren som ble brukt for test:
+```C++
+/*
+ Controlling a servo position using a potentiometer (variable resistor)
+ by Michal Rinott <http://people.interaction-ivrea.it/m.rinott>
+
+ modified on 8 Nov 2013
+ by Scott Fitzgerald
+ http://www.arduino.cc/en/Tutorial/Knob
+*/
+
+#include <Servo.h>
+#include <ESC.h>
+
+Servo myECS;  // create servo object to control a servo
+
+
+
+int potpin = 0;  // analog pin used to connect the potentiometer
+int val;    // variable to read the value from the analog pin
+
+void setup() {
+  
+  myECS.attach(9);  // attaches the servo on pin 9 to the servo object
+  Serial.begin(9600);
+}
+
+void loop() {
+  int SensorValue = analogRead(A0);
+  val = analogRead(potpin);            // reads the value of the potentiometer (value between 0 and 1023)
+  val = map(val, 0, 1023, 1000, 2000);     // scale it to use it with the servo (value between 0 and 180)
+  myECS.write(val);                  // sets the servo position according to the scaled value
+
+  Serial.println(SensorValue);
+  
+  delay(10);                           // waits for the servo to get there
+  
+}
+``` 
