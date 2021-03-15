@@ -114,10 +114,11 @@ void loop() {
 ``` 
 
 ##### 15.03
-Vi har montert av koblingsbrettet og flyttet Hector opp på toppen. Vi har funnet en boks som vi kan montere PSU-ene inn i på siden, og modelert en boks for kretskortet. 
+Vi har montert av koblingsbrettet og flyttet Hector opp på toppen. Vi har funnet en boks som vi kan montere PSU-ene inn i på siden, og modelert en boks for kretskortet. Vi må finne ut hvilken side på bokesen vi skal ha et hull for kablene så den ferdige designen er ikke ferdig.
 
 Boks:
 
 ![](https://github.com/KubenKoder/Hector_cnc_fres/blob/main/bilder/Skjermbilde%202021-03-15%20134232.png)
 ![](https://github.com/KubenKoder/Hector_cnc_fres/blob/main/bilder/Skjermbilde%202021-03-15%20134352.png)
 ![](https://github.com/KubenKoder/Hector_cnc_fres/blob/main/bilder/Skjermbilde%202021-03-15%20134523.png)
+
