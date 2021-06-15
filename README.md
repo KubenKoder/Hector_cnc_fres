@@ -122,3 +122,5 @@ Boks:
 ![](https://github.com/KubenKoder/Hector_cnc_fres/blob/main/bilder/Skjermbilde%202021-03-15%20134352.png)
 ![](https://github.com/KubenKoder/Hector_cnc_fres/blob/main/bilder/Skjermbilde%202021-03-15%20134523.png)
 
+##### 15.06
+Jakob har lastet opp en koblingsguide [her](https://github.com/fellesverkstedet/fabricatable-machines/tree/master/hrbl-shield#connect-the-steppers-and-sensors)
