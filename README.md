@@ -1,6 +1,10 @@
 # Hector_cnc_fres
 Alt som rører hector cnc-fresen på Kuben vgs robotikklinja
 
+## Status 25.01.2024
+Alle 3 axer kan kjøres med [Universal G-code sender](https://winder.github.io/ugs_website/) men vi har ikke riktig kontroll på spindeln
+
+
 ## Historikk
 
 Hector is a CNC machine in the [fabricateable machines family](https://github.com/fellesverkstedet/fabricatable-machines/wiki)
